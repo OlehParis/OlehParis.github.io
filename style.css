@@ -127,6 +127,7 @@ img {
   border-radius: 10px;
 }
 h1 {
+  margin-top: 120px;
   /* background-color: black; */
   color: goldenrod;
   text-shadow: rgb(102, 57, 57) 2px 2px 3px;
@@ -360,6 +361,25 @@ footer a:hover {
   }
   #about44 {
     display: block;
+  }
+  #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px;
+  }
+  #container {
+    pointer-events: none;
+    opacity: 0; /* Optional: Adjust opacity to visually indicate the disabled state */
+    cursor: not-allowed; /* Optional: Change cursor to indicate that interaction is not allowed */
+  }
+
+  /* Optional: Re-enable specific child elements if needed */
+  #container.enabled-child {
+    pointer-events: auto;
   }
 }
 @media screen and (max-width: 970px) {

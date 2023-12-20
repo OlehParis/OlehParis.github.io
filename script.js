@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //FOR GALLERY PICTURES
-// if(document.url.value == 'http://localhost:5001/gallery.html'){
+// if(document.url.value == 'http://localhost:5001/gallery.html')
 document.addEventListener("DOMContentLoaded", function () {
   const galleryButton11 = document.getElementById("sarabday");
 
