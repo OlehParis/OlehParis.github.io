@@ -1,5 +1,6 @@
 body {
   position: relative;
+  min-height: 100vh;
 }
 
 body::before {
@@ -214,11 +215,7 @@ textarea {
 .gallery-item img {
   max-width: 100%;
 }
-footer {
-  background-color: rgba(0, 0, 0, 0.3);
-  align-self: flex-end;
-  font-size: smaller;
-}
+
 footer p {
   color: goldenrod;
   text-align: center;
@@ -266,9 +263,7 @@ footer a:hover {
   text-align: center;
   padding: 10px;
 }
-#contactusfooter {
-  margin-top: 100px;
-}
+
 #galleryfooter {
   margin-top: 720px;
 }
@@ -345,17 +340,17 @@ footer a:hover {
 }
 @media screen and (max-width: 797px) {
   #letus {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    transform: translate(120px, -50px);
+   
   }
   nav button {
     margin: 5px 5px 5px;
   }
-  #right-content {
+  /* #right-content {
     height: 70px;
-  }
+  } */
   h1 {
     font-size: 1.5em;
   }
@@ -363,7 +358,7 @@ footer a:hover {
     display: block;
   }
   #footer {
-    position: fixed;
+    position: flex;
     bottom: 0;
     left: 0;
     width: 100%;
